@@ -1,0 +1,36 @@
+{
+  "name": "@splash-cli/unit-formatter",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava",
+    "build": "babel src -d build",
+    "postinstall": "npm run build",
+    "prepublish": "rm -rf build",
+    "pretest": "npm run build"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "description": "Format numbers by adding 'b/k/m' at the end. 1000 => 1k",
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splash-cli/unit-formatter.git"
+  },
+  "keywords": [
+    "unit",
+    "format",
+    "formatter",
+    "numbers",
+    "fix"
+  ],
+  "author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
+  "bugs": {
+    "url": "https://github.com/splash-cli/unit-formatter/issues"
+  },
+  "homepage": "https://github.com/splash-cli/unit-formatter#readme"
+}
