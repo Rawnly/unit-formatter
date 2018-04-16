@@ -8,7 +8,7 @@
  * 
  * @param {Number} num 
  */
-const uFormatter = num => {
+export default function(num) {
 	if (num > 999999999) {
 		if (num % 1000000000 === 0) {
 			return (num / 1000000000) + 'B';
@@ -32,5 +32,3 @@ const uFormatter = num => {
 
 	return num;
 };
-
-module.exports = uFormatter;
