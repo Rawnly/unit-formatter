@@ -4,11 +4,9 @@
   "main": "build/index.js",
   "license": "MIT",
   "scripts": {
-    "test": "ava",
     "build": "babel src -d build",
-    "postinstall": "npm run build",
-    "prepublish": "rm -rf build",
-    "pretest": "npm run build"
+    "prepublish": "npm run build",
+    "test": "ava test.js"
   },
   "devDependencies": {
     "ava": "^0.25.0",
